@@ -1,0 +1,11 @@
+@media screen and (max-width: 992px) {
+    .nav-wrapper {
+        margin: 0 auto;
+    }
+    
+    .button {
+        display: block !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
