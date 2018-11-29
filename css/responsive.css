@@ -1,4 +1,4 @@
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1000px) {
     .nav-wrapper {
         margin: 0 auto;
     }
@@ -8,4 +8,34 @@
         margin-left: auto !important;
         margin-right: auto !important;
     }
+
+    .title {
+        font-size: 3rem !important;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
 }
+
+@media screen and (max-width: 1000px) {
+    .nav-link:not(.burger) {display: none;}
+    .burger {display: initial !important}
+    .nav-link.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .nav-links.responsive {position: relative;}
+    .nav-links.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .nav-links.responsive a {
+        float: none;
+        display: block;
+    }
+}  
