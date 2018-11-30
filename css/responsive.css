@@ -17,8 +17,22 @@
         font-size: 2rem;
     }
 
+    .section {
+        padding: 0;
+    }
+
     .grid {
         grid-template-columns: 1fr;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column !important;
+    }
+    
+    .column {
+        width: 100%;
+        min-height: unset;
     }
 }
 

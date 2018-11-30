@@ -9,6 +9,11 @@ html, body {
     overflow-x: hidden;
 }
 
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
 /*=========Components=========*/
 .nav-wrapper {
     height: fit-content;
@@ -99,6 +104,21 @@ html, body {
     margin: auto;
 }
 
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    width: 50%;
+    padding: 40px;
+    min-height: 400px;
+}
+
+.column:nth-child(2) {
+    text-align: right;
+}
+
 /*========Bits=======*/
 /*The torii icon on the home page*/
 #header-icon {
@@ -142,6 +162,10 @@ html, body {
 
 .header .subtitle {
     color: #FFFFFF;
+}
+
+p {
+    font-family: "Noto Serif JP", sans-serif;
 }
 
 /*========Grouped the Buttons on the header=======*/
