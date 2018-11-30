@@ -92,6 +92,11 @@ html, body {
 .section {
     min-height: 400px;
     padding: 40px;
+    background-color: #fff;
+}
+
+.section:nth-child(odd) {
+    background-color: rgb(252, 252, 252);
 }
 
 .grid {
