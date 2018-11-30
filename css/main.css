@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lora|Noto+Serif+JP|Tauri');
+@import url('https://fonts.googleapis.com/css?family=Lora|Noto+Serif+JP|Tauri|Kokoro');
 
 /*Do not touch! keeps breaking*/
 html, body {
@@ -85,13 +85,18 @@ html, body {
 }
 
 .section {
-    height: 400px;
     min-height: 400px;
+    padding: 40px;
 }
 
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+.grid img {
+    width: 100%;
+    margin: auto;
 }
 
 /*========Bits=======*/
@@ -129,7 +134,7 @@ html, body {
     font-style: normal;
     font-weight: normal;
     line-height: normal;
-    font-size: 23px;
+    font-size: 1.9rem;
     text-transform: capitalize;
 
     margin: 0 0 7px;
@@ -152,3 +157,11 @@ html, body {
     margin: 26px;
 }
 
+#jp-flag {
+    float: right;
+}
+
+/*=======Languages=========*/
+.JP.subtitle {
+    font-family: "Noto Serif JP", sans-serif;
+}
