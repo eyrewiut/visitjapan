@@ -76,6 +76,11 @@ html, body {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/fuji.jpg);
 }
 
+/*Specifically the header section on the recommended places page*/
+.header.home {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/fuji.jpg);
+}
+
 /*========Wrappers and things=========*/
 /*A content wrapper centering the items in the header*/
 .content {
