@@ -57,6 +57,10 @@
 }
 
 @media screen and (max-width: 600px) {
+    .header.place {
+        min-height: 100%;
+    }
+
     .section {
         padding: 0;
     }

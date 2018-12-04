@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Visit Japan | Places to visit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/responsive.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+</head>
+<body>
+    <header class="header place kurashiki">
+        <div class="nav-wrapper">
+            <div class="nav-links" id="nav-links">
+                <a class="nav-link" href="../index.html">
+                    <i class="fas fa-home"></i>
+                    Home
+                </a>
+                <a class="nav-link" href="../recommended-places.html">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Places to go
+                </a>
+                <a class="nav-link" href="../accommodation.html">
+                    <i class="fas fa-hotel"></i>
+                    Accommodation
+                </a>
+                <a class="nav-link" href="../culture.html">
+                    <i class="fas fa-torii-gate"></i>
+                    Culture
+                </a>
+                <a class="nav-link burger" href="javascript:void(0);" onclick="expandBurger()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <script>
+            function expandBurger() {
+                var x = document.getElementById("nav-links");
+                if (x.className === "nav-links") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "nav-links";
+                }
+            }
+        </script>
+        <div class="content">
+            <img src="../img/toriigate.svg" width="237px" height="143.99px" alt="Torii Gate" class="floating" id="header-icon">
+            <h1 class="title">Visit Japan</h1>
+            <h3 class="subtitle">Land of the rising sun</h3>
+            <div class="buttons">
+                <a href="../recommended-places.html" class="button">Places</a>
+                <a href="../accommodation.html" class="button">Accommodation</a>
+                <a href="../culture.html" class="button">Culture</a>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
