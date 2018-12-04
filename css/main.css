@@ -121,7 +121,7 @@ html, body {
 }
 
 .section:nth-child(odd) {
-    background-color: rgb(259, 249, 249);
+    background-color: #fafafa
 }
 
 .grid {
