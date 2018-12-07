@@ -98,7 +98,7 @@ html, body {
 .header.place {min-height: 70%;}
 
 .header.place.arashiyama {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/arashiyama/arashiyama.PNG);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/arashiyama/arashiyama-cherryblossom.jpg);
 }
 
 .header.place.kurashiki {
@@ -106,19 +106,20 @@ html, body {
 }
 
 .header.place.gujohachiman {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/kurashiki/kurasiki-boats.PNG);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/gujohachiman/gujohachiman-ayu.PNG);
 }
 
 .header.place.ichijodaniasakura {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/kurashiki/kurasiki-boats.PNG);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/ichijodani/ichijodani-room.PNG);
 }
 
 .header.place.miyajima {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/kurashiki/kurasiki-boats.PNG);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/miyajima/miyajima-water.jpg);
 }
 
 .header.place .title {
     font-size: 4.5rem;
+    color: #fff;
 }
 
 /*========Wrappers and things=========*/
@@ -217,6 +218,11 @@ html, body {
 
 p {
     font-family: "Noto Serif JP", sans-serif;
+}
+
+.video {
+    width: 100%;
+    height: 51vh;
 }
 
 /*========Grouped the Buttons on the header=======*/
