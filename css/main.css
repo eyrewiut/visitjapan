@@ -97,8 +97,28 @@ html, body {
 /*specifies the min height for headers on a place page*/
 .header.place {min-height: 70%;}
 
+.header.place.arashiyama {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/arashiyama/arashiyama.PNG);
+}
+
 .header.place.kurashiki {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/kurashiki/kurashiki-shrine.PNG);
+}
+
+.header.place.gujohachiman {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/kurashiki/kurasiki-boats.PNG);
+}
+
+.header.place.ichijodaniasakura {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/kurashiki/kurasiki-boats.PNG);
+}
+
+.header.place.miyajima {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/kurashiki/kurasiki-boats.PNG);
+}
+
+.header.place .title {
+    font-size: 4.5rem;
 }
 
 /*========Wrappers and things=========*/
