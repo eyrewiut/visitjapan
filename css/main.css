@@ -21,6 +21,47 @@ html, body {
     margin-left: auto;
 }
 
+/*The gallery*/
+.row.gallery {
+    min-height: unset;
+    flex-direction: row !important;
+    justify-content: center;
+}
+
+.row.gallery .slide {
+    width: 200px;
+    height:200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 5px;
+}
+
+.gallery.gujohachiman .slide:nth-child(1) {
+    background: url(/img/gujohachiman/gujohachiman-castleautumnlarge.jpg);
+    background-position: 70%;
+}
+.gallery.gujohachiman .slide:nth-child(2) {
+    background: url(/img/gujohachiman/gujohachiman-castleautumn.jpg);
+    background-position: 50% 36%;
+}
+.gallery.gujohachiman .slide:nth-child(3) {
+    background: url(/img/gujohachiman/gujohachiman-castlemisty.jpg);
+    background-position: 70%;
+    background-size: 200% !important;
+}
+.gallery.gujohachiman .slide:nth-child(4) {
+    background: url(/img/gujohachiman/gujohachiman-well.PNG);
+    background-position: 70%;
+}
+.gallery.gujohachiman .slide:nth-child(5) {
+    background: url(/img/gujohachiman/gujohachiman-gutter.PNG);
+    background-position: 70%;
+}
+.gallery.gujohachiman .slide:nth-child(6) {
+    background: url(/img/gujohachiman/gujohachiman-street.PNG);
+    background-position: 70%;
+}
+
 /***********Navbar dropdown************/
 /*Sets the style of "active" elements*/
 .burger {
@@ -97,8 +138,8 @@ html, body {
 /*specifies the min height for headers on a place page*/
 .header.place {min-height: 70%;}
 
-.header.place.arashiyama {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/arashiyama/arashiyama-cherryblossom.jpg);
+.header.place.hirosaki {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/hirosaki/hirosaki-winter.jpg);
 }
 
 .header.place.kurashiki {
@@ -113,9 +154,6 @@ html, body {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/ichijodani/ichijodani-room.PNG);
 }
 
-.header.place.miyajima {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/miyajima/miyajima-water.jpg);
-}
 
 .header.place .title {
     font-size: 4.5rem;
@@ -131,10 +169,12 @@ html, body {
     text-align: center;
 }
 
+/*button wrapper from the header*/
 .buttons {
     margin: 30px;
 }
 
+/*Specially styles sections*/
 .section {
     min-height: 400px;
     padding: 40px;
@@ -145,29 +185,52 @@ html, body {
     background-color: #fafafa
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.grid img {
-    width: 100%;
-    margin: auto;
-}
-
+/*Adds a row*/
 .row {
     display: flex;
     flex-direction: row;
 }
 
+/*Sets up the columns*/
 .column {
     width: 50%;
     padding: 40px;
     min-height: 400px;
+    flex-direction: column;
 }
 
 .column:nth-child(2) {
     text-align: right;
+}
+
+/*Makes the videos fixed aspect ratio*/
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/*For the maps*/
+.mapouter {
+    text-align: right;
+    height: 500px;
+    width: 100%;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 500px;
+    width: 100%;
 }
 
 /*========Bits=======*/
@@ -220,11 +283,6 @@ p {
     font-family: "Noto Serif JP", sans-serif;
 }
 
-.video {
-    width: 100%;
-    height: 51vh;
-}
-
 /*========Grouped the Buttons on the header=======*/
 .button {
     background: #F2C94C;
@@ -244,7 +302,13 @@ p {
     float: right;
 }
 
-/*=======Languages=========*/
+.column img {
+    width: 100%;
+}
+
+/*=======Languages etc=========*/
 .JP.subtitle {
     font-family: "Noto Serif JP", sans-serif;
 }
+
+.italic {font-style: italic;}

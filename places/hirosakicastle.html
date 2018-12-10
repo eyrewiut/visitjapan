@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Visit Japan | Places to visit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/responsive.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+    <header class="header place hirosaki">
+        <div class="nav-wrapper">
+            <div class="nav-links" id="nav-links">
+                <a class="nav-link" href="../index.html">
+                    <i class="fas fa-home"></i>
+                    Home
+                </a>
+                <a class="nav-link" href="../recommended-places.html">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Places to go
+                </a>
+                <a class="nav-link" href="../accommodation.html">
+                    <i class="fas fa-hotel"></i>
+                    Accommodation
+                </a>
+                <a class="nav-link" href="../culture.html">
+                    <i class="fas fa-torii-gate"></i>
+                    Culture
+                </a>
+                <a class="nav-link burger" href="javascript:void(0);" onclick="expandBurger()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <script>
+            function expandBurger() {
+                var x = document.getElementById("nav-links");
+                if (x.className === "nav-links") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "nav-links";
+                }
+            }
+        </script>
+        <div class="content">
+            <h1 class="title">Hirosaki Castle</h1>
+            <h3 class="subtitle JP">Aomori</h3>
+        </div>
+        </div>
+    </header>
+    <section class="section">
+            <div class="row">
+                <div class="column">
+                    <p>
+                        Hirosaki park and castle is one of Japan's best spots for viewing the beautiful cherry blossoms from April to May, it has an abundence of over 2500 <span class="italic">Sakura</span> trees and a festival is held annually while they are out, the number of sakura petals falling during this time turns the moats around completely pink with <span class="italic">Sakura</span> petals. Aside from The castle building, The castle's construction was originally started by Ōura Tamenobu during the late sengoku period, this time was a rather turbulant period in Japan's past and after siding with the most powerful leaders he managed to secure the region. However, he died before initial construction was complete and so it was left to the 9th daimyo; Tsugaru Yasuchika.
+                    </p>
+                    <p>
+                        The current castle is a 3 story building with 3 roofs and is 14.4 meters high, however, this is smaller than the original building which had 5 stories. 
+                    </p>
+                    <p>
+                        There are a few other interesting places to visit in Hirosaki park; one being the Botanical Garden in the park's southeast corner and Gokoku Shrine as well as the Aomori branch of the Yasukuni Shrine. Many of the city's other tourist attractions are also located within walking distance of the park.
+                    </p>
+                </div>
+                <div class="column hasVideo">
+                    <div class="videoWrapper">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/B0VVouD177s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="mapouter">
+                    <div class="gmap_canvas">
+                        <iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=hirosaki%20castle&t=k&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+</body>
+</html>

@@ -34,6 +34,10 @@
         width: 100%;
         min-height: unset;
     }
+
+    .column.hasVideo {
+        padding: 0;
+    }
 }
 
 @media screen and (max-width: 1222px) {
@@ -54,6 +58,24 @@
         width: 100%;
         object-fit: cover;
     }
+
+    .row#gallery {
+        min-height: unset;
+        max-width: 100%;
+        background-color: green;
+    }
+    
+    .row#gallery .column {
+        min-height: 200px;
+    }
+    
+    .gallery.gujohachiman .slide:nth-child(2) {
+        background-position: 47% 32% !important;
+    }
+    .gujohachiman.gallery .slide:nth-child(3) {
+        background-size: cover !important;
+    }
+    
 }
 
 @media screen and (max-width: 600px) {
