@@ -31,34 +31,52 @@ html, body {
 .row.gallery .slide {
     width: 200px;
     height:200px;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
     margin: 5px;
+    
 }
 
 .gallery.gujohachiman .slide:nth-child(1) {
-    background: url(/img/gujohachiman/gujohachiman-castleautumnlarge.jpg);
-    background-position: 70%;
+    background: url(../img/gujohachiman/gujohachiman-station.jpg);
+    background-position: 50%;
 }
 .gallery.gujohachiman .slide:nth-child(2) {
-    background: url(/img/gujohachiman/gujohachiman-castleautumn.jpg);
+    background: url(../img/gujohachiman/gujohachiman-castleautumn.jpg);
     background-position: 50% 36%;
 }
 .gallery.gujohachiman .slide:nth-child(3) {
-    background: url(/img/gujohachiman/gujohachiman-castlemisty.jpg);
+    background: url(../img/gujohachiman/gujohachiman-castlemisty.jpg);
     background-position: 70%;
     background-size: 200% !important;
 }
 .gallery.gujohachiman .slide:nth-child(4) {
-    background: url(/img/gujohachiman/gujohachiman-well.PNG);
+    background: url(../img/gujohachiman/gujohachiman-well.PNG);
     background-position: 70%;
 }
 .gallery.gujohachiman .slide:nth-child(5) {
-    background: url(/img/gujohachiman/gujohachiman-gutter.PNG);
+    background: url(../img/gujohachiman/gujohachiman-gutter.PNG);
     background-position: 70%;
 }
 .gallery.gujohachiman .slide:nth-child(6) {
-    background: url(/img/gujohachiman/gujohachiman-street.PNG);
+    background: url(../img/gujohachiman/gujohachiman-street.PNG);
+    background-position: 70%;
+}
+
+.gallery.kurashiki .slide:nth-child(1) {
+    background: url(../img/kurashiki/kurashiki-market.PNG);
+    background-position: 50%;
+}
+.gallery.kurashiki .slide:nth-child(2) {
+    background: url(../img/kurashiki/kurashiki-shrine.PNG);
+    background-position: 50% 36%;
+}
+.gallery.kurashiki .slide:nth-child(3) {
+    background: url(../img/kurashiki/kurashiki-street.jpg);
+    background-position: 70%;
+}
+.gallery.kurashiki .slide:nth-child(4) {
+    background: url(../img/kurashiki/kurasiki-boats.PNG);
     background-position: 70%;
 }
 
