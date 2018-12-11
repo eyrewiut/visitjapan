@@ -109,8 +109,7 @@ html, body {
     font-size: 23px;
     text-align: center;
     text-transform: capitalize;
-    text-decoration: none;
-    
+
     color: #FFFFFF;
 
     margin: 22.5px;
@@ -145,7 +144,7 @@ html, body {
 }
 
 .header.accommodation {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/kiyomizu-dera.jpg);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/room.jpg);
 }
 
 .header.culture {
@@ -299,6 +298,11 @@ html, body {
 
 p {
     font-family: "Noto Serif JP", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
 }
 
 /*========Grouped the Buttons on the header=======*/

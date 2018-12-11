@@ -3,12 +3,91 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>X out of time X</title>
+    <title>Visit Japan | Accommodation</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/responsive.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 <body>
-    ran out of time :/
+    <header class="header accommodation main">
+        <div class="nav-wrapper">
+            <div class="nav-links" id="nav-links">
+                <a class="nav-link" href="index.html">
+                    <i class="fas fa-home"></i>
+                    Home
+                </a>
+                <a class="nav-link" href="recommended-places.html">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Places to go
+                </a>
+                <a class="nav-link" href="accommodation.html">
+                    <i class="fas fa-hotel"></i>
+                    Accommodation
+                </a>
+                <a class="nav-link" href="culture.html">
+                    <i class="fas fa-torii-gate"></i>
+                    Culture
+                </a>
+                <a class="nav-link burger" href="javascript:void(0);" onclick="expandBurger()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <script>
+            function expandBurger() {
+                var x = document.getElementById("nav-links");
+                if (x.className === "nav-links") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "nav-links";
+                }
+            }
+        </script>
+        <div class="content">
+            <img src="img/toriigate.svg" width="237px" height="143.99px" alt="Torii Gate" class="floating" id="header-icon">
+            <h1 class="title">Accommodation</h1>
+            <h3 class="subtitle">Land of the rising sun</h3>
+            <div class="buttons">
+                <a href="recommended-places.html" class="button">Places</a>
+                <a href="accommodation.html" class="button">Accommodation</a>
+                <a href="culture.html" class="button">Culture</a>
+            </div>
+        </div>
+    </header>
+    <section class="section">
+        <div class="row">
+            <div class="column">
+                <h2 class="title">Yurin-an</h2>
+                <h3 class="subtitle JP">ゲストハウス</h3>
+                <p>
+                    We are a guesthouse & cafe "YUURIN-AN" using the old houses built for 100 years.
+                    It is the center of Bikan historical quarter at Kurashiki where the familiar townscape of the Edo period still remains,
+                    and we have about 60,000 travelers annually.
+                </p>
+                <p>   
+                    Our philosophy is "To create a life rich in spirit".
+                </p>
+                <p>
+                    Having a meal good for health
+                    Living with the history of the land.
+                    To know both the goodness of something old and something new.
+                    Cherish those close to you.
+                </p>
+                <p>
+                    We would like to increase such a lifestyle as much as possible.
+                </p>
+                <p>
+                    There are art museums and various shops in Bikan historical quarter at Kurashiki where you can feel the feeling of
+                    the people who lives there.
+                    We would be greatly appreciated if you could feel the air that mixed atmosphere and culture, which you can only
+                    feel here even if you look around the world.
+                </p>
+            </div>
+            <div class="column">
+                <img src="img/accommodation-yuurinan.jpg" alt="Yuurin-an guesthouse, Kurashiki">
+            </div>
+        </div>
+    </section>
 </body>
 </html>
