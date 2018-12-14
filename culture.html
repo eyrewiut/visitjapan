@@ -10,30 +10,39 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 <body>
+    <!--The header section contains header content and navigation links-->
     <header class="header culture main">
+        <!--The navbar at the top-right-->
         <div class="nav-wrapper">
             <div class="nav-links" id="nav-links">
                 <a class="nav-link" href="index.html">
+                    <!--An icon from fontawsome-->
                     <i class="fas fa-home"></i>
                     Home
                 </a>
                 <a class="nav-link" href="recommended-places.html">
+                    <!--An icon from fontawsome-->
                     <i class="fas fa-map-marker-alt"></i>
                     Places to go
                 </a>
                 <a class="nav-link" href="accommodation.html">
+                    <!--An icon from fontawsome-->
                     <i class="fas fa-hotel"></i>
                     Accommodation
                 </a>
                 <a class="nav-link" href="culture.html">
+                    <!--An icon from fontawsome-->
                     <i class="fas fa-torii-gate"></i>
                     Culture
                 </a>
+                <!--The navbar burger is only shown on mobile screens and shows the nav links on click-->
                 <a class="nav-link burger" href="javascript:void(0);" onclick="expandBurger()">
+                    <!--An icon from fontawsome-->
                     <i class="fa fa-bars"></i>
                 </a>
             </div>
         </div>
+        <!--This script collapses and expands the navbar burger-->
         <script>
             function expandBurger() {
                 var x = document.getElementById("nav-links");

@@ -10,30 +10,39 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 <body>
+    <!--The header section contains header content and navigation links-->
     <header class="header place gujohachiman">
+        <!--The navbar at the top-right-->
         <div class="nav-wrapper">
             <div class="nav-links" id="nav-links">
                 <a class="nav-link" href="../index.html">
+                    <!--An icon from fontawsome-->
                     <i class="fas fa-home"></i>
                     Home
                 </a>
                 <a class="nav-link" href="../recommended-places.html">
+                    <!--An icon from fontawsome-->
                     <i class="fas fa-map-marker-alt"></i>
                     Places to go
                 </a>
                 <a class="nav-link" href="../accommodation.html">
+                    <!--An icon from fontawsome-->
                     <i class="fas fa-hotel"></i>
                     Accommodation
                 </a>
                 <a class="nav-link" href="../culture.html">
+                    <!--An icon from fontawsome-->
                     <i class="fas fa-torii-gate"></i>
                     Culture
                 </a>
+                <!--The navbar burger is only shown on mobile screens and shows the nav links on click-->
                 <a class="nav-link burger" href="javascript:void(0);" onclick="expandBurger()">
+                    <!--An icon from fontawsome-->
                     <i class="fa fa-bars"></i>
                 </a>
             </div>
         </div>
+        <!--This script collapses and expands the navbar burger-->
         <script>
             function expandBurger() {
                 var x = document.getElementById("nav-links");
@@ -50,8 +59,11 @@
             </div>
         </div>
     </header>
+    <!--The sections class adds padding and makes every odd section a slighly darker colour-->
     <section class="section">
+        <!--Rows create a single row-->
         <div class="row">
+            <!--Columns create a responsive width element that goes inside a row-->
             <div class="column">
                 <p>
                     Gujo hachiman is a traditional, historic town with much of the town protected as "important preservation buildings", specifically the buildings along <span class="italic">Ote machi,</span> <span class="italic">machi,</span><span class="italic"> Yanagi machi</span> and <span class="italic"> machi.</span> The Gujo Hachiman railway station, built in 1929, has also been designated as an "Important cultural property" and was carefully restored to it's original design.
@@ -66,6 +78,7 @@
                     There is also a small street off Shin machi called Yanaka Ko Michi is pedestrian only and is a nice place to relax and people watch. The narrow street is paved with small river pebbles and stones, with a small stream running along one side. A few small willow trees provide shade in the summer.
                 </p>
             </div>
+            <!--The youtube video embed, the videoWrapper class makes sure the video stays the correct aspect ratio-->
             <div class="column hasVideo">
                 <div class="videoWrapper">
                     <iframe width="560" height="349" src="https://www.youtube.com/embed/Fqpr_2uKzwY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -73,6 +86,7 @@
             </div>
         </div>
     </section>
+    <!--A small mostly responsive gallery of images-->
     <section class="section row gallery gujohachiman">
         <!--img src="/img/gujohachiman/gujohachiman-castleautumn.jpg"-->
         <div class="slide"></div>
@@ -84,6 +98,7 @@
     </section>
     <section class="section">
         <div class="row">
+            <!--The google maps embed-->
             <div class="mapouter">
                 <div class="gmap_canvas">
                     <iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=gujo%20hachiman&t=k&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>

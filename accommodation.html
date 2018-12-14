@@ -10,33 +10,44 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 <body>
+    <!--The header contains the navigation links and background at the top of the page-->
     <header class="header accommodation main">
+        <!--The navbar at the top-right-->
         <div class="nav-wrapper">
             <div class="nav-links" id="nav-links">
                 <a class="nav-link" href="index.html">
+                    <!--An icon from fontawsome-->
                     <i class="fas fa-home"></i>
                     Home
                 </a>
                 <a class="nav-link" href="recommended-places.html">
+                    <!--An icon from fontawsome-->
                     <i class="fas fa-map-marker-alt"></i>
                     Places to go
                 </a>
                 <a class="nav-link" href="accommodation.html">
+                    <!--An icon from fontawsome-->
                     <i class="fas fa-hotel"></i>
                     Accommodation
                 </a>
                 <a class="nav-link" href="culture.html">
+                    <!--An icon from fontawsome-->
                     <i class="fas fa-torii-gate"></i>
                     Culture
                 </a>
+                <!--The navbar burger is only shown on mobile screens, it replaces the nav links and will show them when clicked-->
                 <a class="nav-link burger" href="javascript:void(0);" onclick="expandBurger()">
+                    <!--An icon from fontawsome-->
                     <i class="fa fa-bars"></i>
                 </a>
             </div>
         </div>
+        <!--This script handles the navbar burger and hides the links-->
         <script>
             function expandBurger() {
+                //get the element with an id of "nav-links" and assign it to "x"
                 var x = document.getElementById("nav-links");
+                //If the element with the "nav-links" id also has a classname of "nav-links", add the "responsive" class to it, otherwise, set the element to only have a class of "nav-links"
                 if (x.className === "nav-links") {
                     x.className += " responsive";
                 } else {
@@ -44,20 +55,27 @@
                 }
             }
         </script>
+        <!--The content div is a small wrapper in the center of the header that contains items in the center, this allows me to keep them all in the right place much easier-->
         <div class="content">
+            <!--Anything with the floating class will have a small css animation that makes it bob up and down-->
             <img src="img/toriigate.svg" width="237px" height="143.99px" alt="Torii Gate" class="floating" id="header-icon">
+            <!--The title and subtitle classes just set fonts and font size-->
             <h1 class="title">Accommodation</h1>
             <h3 class="subtitle">Land of the rising sun</h3>
+            <!--The buttons div is just another small wrapper that goes around the buttons in the header-->
             <div class="buttons">
+                <!--3 links below the header content-->
                 <a href="recommended-places.html" class="button">Places</a>
                 <a href="accommodation.html" class="button">Accommodation</a>
                 <a href="culture.html" class="button">Culture</a>
             </div>
         </div>
     </header>
+    <!--The sections class adds padding and makes every odd section a slighly darker colour-->
     <section class="section">
-        <div class="row">
-            <div class="column">
+            <!--Rows create a single row-->
+            <div class="row">
+                <!--Columns create a responsive width element that goes inside a row-->
                 <h2 class="title">Yurin-an</h2>
                 <h3 class="subtitle JP">ゲストハウス</h3>
                 <p>
@@ -83,9 +101,48 @@
                     We would be greatly appreciated if you could feel the air that mixed atmosphere and culture, which you can only
                     feel here even if you look around the world.
                 </p>
+                <a href="https://yuurin-an.jp/" class="button">Find out more</a>
             </div>
             <div class="column">
                 <img src="img/accommodation-yuurinan.jpg" alt="Yuurin-an guesthouse, Kurashiki">
+            </div>
+        </div>
+        <div class="row">
+            <!--Mapouter and gmap canvas make sure the map embeds are the size I want-->
+            |<div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe width="100%" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=yuurin-an&t=k&z=18&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--The sections class adds padding and makes every odd section a slighly darker colour-->
+    <section class="section">
+            <!--Rows create a single row-->
+            <div class="row">
+                <!--Columns create a responsive width element that goes inside a row-->
+                <h2 class="title">Koshinzuka Minshuku</h2>
+                <h3 class="subtitle JP">りょかん</h3>
+                <p>
+                    Kohsinzuka Inn is a 100 years or more-old house located in Ohtsumago, a bit
+                    away from Tsumagojuku.
+                    It is surrounded by Nakasendo an old trail and a mountain stream.
+                    Traditional charcoal-burnt "Irori" hearth is loved by lots of visitors.
+                    You will fully enjoy the night of stay by dining and talking each other
+                    with guests by the side of warm "Irori".
+                    Please have an enjoyable time in this remote countryside.
+                </p>
+                <a href="http://www.kiso.ne.jp/~koosinzuka.nt/ko15eng.html" class="button">Find out more</a>
+            </div>
+            <div class="column">
+                <img src="img/accommodation-koshinzuka.jpg" alt="Koshinzuka Minshuku">
+            </div>
+        </div>
+        <div class="row">
+            |<div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe width="100%" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=Koshinzuka%20Minshuku&t=k&z=18&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                </div>
             </div>
         </div>
     </section>
