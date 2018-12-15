@@ -216,10 +216,6 @@ html, body {
     flex-direction: column;
 }
 
-.column:nth-child(2) {
-    text-align: right;
-}
-
 /*Makes the videos fixed aspect ratio*/
 .videoWrapper {
 	position: relative;
