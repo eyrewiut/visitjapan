@@ -210,9 +210,9 @@ html, body {
 
 /*Sets up the columns*/
 .column {
-    width: 50%;
+    width: 100%;
     padding: 40px;
-    min-height: 400px;
+    min-height: 350px;
     flex-direction: column;
 }
 
